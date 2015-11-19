@@ -1,5 +1,6 @@
 # ZJPrintKey
 更加方便我们创建基于MJExtension的模型类 例如数据:
+```objective-c
 {
 "result": 1,
 "msg": "获取成功",
@@ -37,11 +38,13 @@
 }
 ]
 }
+```
 类中调用
-[self zj_dictionaryToLogUrlStr:@"urlString” andKey:@"data"
-andKeyReplaceDictionary:nil];
-
+```objective-c
+[self zj_dictionaryToLogUrlStr:@"urlString” andKey:@"data" andKeyReplaceDictionary:nil];
+```
 可以打印出
+```objective-c
 /**********ZJPrintKey***********/
 @property (copy, nonatomic) NSString *floorName;
 @property (copy, nonatomic) NSString *bannerUrl;
@@ -49,5 +52,6 @@ andKeyReplaceDictionary:nil];
 @property (strong, nonatomic) NSArray *goodsList;
 @property (strong, nonatomic) NSNumber *gcId;
 /**********ZJPrintKey***********/
+```
 然后复制粘贴即可！
 Just for study!
